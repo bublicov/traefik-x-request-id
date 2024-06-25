@@ -23,7 +23,7 @@ entryPoints:
 
 experimental:
    localPlugins:
-      HeaderRequestId:
+      traefik-x-request-id:
          moduleName: "github.com/bublicov/traefik-x-request-id"
 ```
 
@@ -33,5 +33,5 @@ http:
   middlewares:
      HeaderRequestId:
         plugin:
-           HeaderRequestId: { }
+           traefik-x-request-id: { }
 ```
